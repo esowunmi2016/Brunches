@@ -1,7 +1,8 @@
 {
   "name": "brunches",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://esowunmi2016.github.io/Brunches/public/index.html/",
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
@@ -19,9 +20,7 @@
     "react-player": "^2.10.0",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
-    "web-vitals": "^2.1.4",
-    "homepage": "https://esowunmi2016.github.io/Brunches"
-
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "predeploy": "npm run build",
