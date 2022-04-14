@@ -2,7 +2,7 @@
   "name": "brunches",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://esowunmi2016.github.io/Brunches/public/index.html/",
+  "homepage": "https://esowunmi2016.github.io/Brunches/",
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
