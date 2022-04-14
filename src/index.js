@@ -12,11 +12,13 @@ import Header1 from './components/header';
 import Menu from './components/menu'
 import Location from './components/location'
 import Gallery from './components/gallery'
+import Offer from './components/offer'
 
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
+    <Offer />
     <Header1 />
     <Carousel1 />
     <Menu />

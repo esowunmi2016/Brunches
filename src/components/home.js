@@ -12,15 +12,17 @@ import Header1 from './header';
 import Menu from './menu'
 import Location from './location'
 import Gallery from './gallery'
+// import Offer from './offer'
 
 function Home() {
   return ( 
     <div>
       {/* <App /> */}
-      <Header1 />
+      {/* <Offer /> */}
+      {/* <Header1 />
       <Carousel1 />
       <Menu />
-      <Location />
+      <Location /> */}
       {/* <Gallery /> */}
     </div>
    );

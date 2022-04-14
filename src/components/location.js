@@ -10,7 +10,8 @@ function Location() {
       id='location'
       style={{
         textAlign:'center',
-        overflow:'hidden'
+        overflow:'hidden',
+        background:'white'
       }}
     >
       <div style={{paddingTop:'5%'}}>
@@ -24,7 +25,7 @@ function Location() {
             animateIn='bounceIn'
             // animateOut='backOutLeft'
           >
-            <iframe width='80%' height="450" style={{border:0, borderRadius:'10px'}} loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ_VM4daeTOxARXL1CCGNOYik&key=AIzaSyAo9AWH5jYq5vtZUEbzQGroN4IKx93fY9E" />
+            <iframe width='80%' height="450" style={{border:0, borderRadius:'10px'}} loading="lazy" allowFullScreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ_VM4daeTOxARXL1CCGNOYik&key=AIzaSyAo9AWH5jYq5vtZUEbzQGroN4IKx93fY9E" />
           </ScrollAnimation>
         </div>
 

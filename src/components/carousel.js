@@ -15,64 +15,68 @@ const contentStyle = {
 
 function Carousel1() {
   return (
-    <div id='carousel' style={{height:'100vh'}}>
-      <Carousel autoplay>
-        <div style={{height:'100vh', width:'100vw'}} > 
-          <div 
-            className='flex'
-            style={{
-              height:'100vh',
-              width:'100vw',
-              backgroundImage:`url('${img1}')`,
-              backgroundSize:'cover',
-              margin:'auto',
-              display:'flex',
-              justifyContent:'center',
-              alignItems:'center'
-            }}
-          >
+    <>
+      <div id='carousel'></div>
+
+      <div className='sticky-top'  style={{height:'100vh', zIndex:'-1' }}>
+        <Carousel autoplay>
+          <div style={{height:'100vh', width:'100vw'}} > 
             <div 
+              className='flex'
               style={{
-                width:'70vw',
-                height:'30vh',
-                textAlign:'center',
+                height:'100vh',
+                width:'100vw',
+                backgroundImage:`url('${img1}')`,
+                backgroundSize:'cover',
+                margin:'auto',
+                display:'flex',
+                justifyContent:'center',
+                alignItems:'center'
               }}
             >
-              <ScrollAnimation
-                animateIn='fadeInDown'
-                // animateOut='fadeOutdown'
+              <div 
+                style={{
+                  width:'70vw',
+                  height:'30vh',
+                  textAlign:'center',
+                }}
               >
-                <p 
-                  style={{
-                    color:'white',
-                    fontFamily:'lobster',
-                    fontSize:'12vmin',
-                  }}
+                <ScrollAnimation
+                  animateIn='fadeInDown'
+                  // animateOut='fadeOutdown'
                 >
-                  Brunches Cafe
-                </p>
-              </ScrollAnimation>
+                  <p 
+                    style={{
+                      color:'white',
+                      fontFamily:'lobster',
+                      fontSize:'12vmin',
+                    }}
+                  >
+                    Brunches Cafe
+                  </p>
+                </ScrollAnimation>
 
-              <ScrollAnimation
-                animateIn='fadeInDown'
-                // animateOut='fadeOutdown'
-              >
-                <p
-                  style={{
-                    fontFamily:'lemonada',
-                    // color:'#381c07',
-                    color:'white'
-                  }}
+                <ScrollAnimation
+                  animateIn='fadeInDown'
+                  // animateOut='fadeOutdown'
                 >
-                  A Perfect Meal Everytime...
-                </p>
-              </ScrollAnimation>
+                  <p
+                    style={{
+                      fontFamily:'lemonada',
+                      // color:'#381c07',
+                      color:'white'
+                    }}
+                  >
+                    A Perfect Meal Everytime...
+                  </p>
+                </ScrollAnimation>
+              </div>
+            
             </div>
-           
           </div>
-        </div>
-      </Carousel>
-    </div>
+        </Carousel>
+      </div>
+    </>
   );
 }
 
