@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Brunches/public/static/css/main.241dedd1.css",
-    "main.js": "/Brunches/public/static/js/main.539ff60e.js",
-    "static/js/787.3af51cb7.chunk.js": "/Brunches/public/static/js/787.3af51cb7.chunk.js",
-    "static/media/menuPg1.png": "/Brunches/public/static/media/menuPg1.259ed95c76a9508c49a1.png",
-    "static/media/menuPg2.png": "/Brunches/public/static/media/menuPg2.4a42bdfcd13cf3e817a5.png",
-    "static/media/12.jpg": "/Brunches/public/static/media/12.20525f94d0f073b6dac1.jpg",
-    "static/media/8.jpeg": "/Brunches/public/static/media/8.b0d36b693a472e3a9a6c.jpeg",
-    "static/media/logo.jpg": "/Brunches/public/static/media/logo.92b5a283237049bb0df0.jpg",
-    "static/media/logo.svg": "/Brunches/public/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/Brunches/public/index.html",
-    "main.241dedd1.css.map": "/Brunches/public/static/css/main.241dedd1.css.map",
-    "main.539ff60e.js.map": "/Brunches/public/static/js/main.539ff60e.js.map",
-    "787.3af51cb7.chunk.js.map": "/Brunches/public/static/js/787.3af51cb7.chunk.js.map"
+    "main.css": "/Brunches/public/index.html/static/css/main.241dedd1.css",
+    "main.js": "/Brunches/public/index.html/static/js/main.6e038a1d.js",
+    "static/js/787.3af51cb7.chunk.js": "/Brunches/public/index.html/static/js/787.3af51cb7.chunk.js",
+    "static/media/menuPg1.png": "/Brunches/public/index.html/static/media/menuPg1.259ed95c76a9508c49a1.png",
+    "static/media/menuPg2.png": "/Brunches/public/index.html/static/media/menuPg2.4a42bdfcd13cf3e817a5.png",
+    "static/media/12.jpg": "/Brunches/public/index.html/static/media/12.20525f94d0f073b6dac1.jpg",
+    "static/media/8.jpeg": "/Brunches/public/index.html/static/media/8.b0d36b693a472e3a9a6c.jpeg",
+    "static/media/logo.jpg": "/Brunches/public/index.html/static/media/logo.92b5a283237049bb0df0.jpg",
+    "static/media/logo.svg": "/Brunches/public/index.html/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Brunches/public/index.html/index.html",
+    "main.241dedd1.css.map": "/Brunches/public/index.html/static/css/main.241dedd1.css.map",
+    "main.6e038a1d.js.map": "/Brunches/public/index.html/static/js/main.6e038a1d.js.map",
+    "787.3af51cb7.chunk.js.map": "/Brunches/public/index.html/static/js/787.3af51cb7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.241dedd1.css",
-    "static/js/main.539ff60e.js"
+    "static/js/main.6e038a1d.js"
   ]
 }
