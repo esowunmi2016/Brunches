@@ -4,6 +4,8 @@
 import {useState, useEffect} from 'react'
 import { Button, Modal, Form, Input, Card } from 'antd';
 
+import img from '../images/13.jpg';
+
 function Offer() {
   
   const [visible, setVisible] = useState(false);
@@ -49,11 +51,11 @@ function Offer() {
         onCancel={handleCancel}
       >
         <div className='row'>
-          <div className='col-sm-12 col-lg-6'>
+          <div className='col-sm-12 col-md-6'>
             <Card
               hoverable
               style={{ width: 240 }}
-              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+              cover={<img alt="example" src={img} />}
             >
               <Meta title="Offer/Deal name here" description="Offfer/Deal information here......." />
             </Card>

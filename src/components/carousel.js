@@ -18,7 +18,7 @@ function Carousel1() {
     <>
       <div id='carousel'></div>
 
-      <div className='sticky-top'  style={{height:'100vh', zIndex:'-1' }}>
+      <div className='sticky-top'  style={{height:'100vh', zIndex:'-1', maxWidth:'100%' }}>
         <Carousel autoplay>
           <div style={{height:'100vh', width:'100vw'}} > 
             <div 
