@@ -2,15 +2,30 @@
 // IT SHOULD NOT ADD ANY FUNCTIONALITY OR BE A SOURCE OF DEPENDENCE TO ANY OTHER COMPONENT
 
 import {useState, useEffect} from 'react'
-import { Button, Modal, Form, Input, Card } from 'antd';
+import { Button, Modal, Form, Input, Card, message } from 'antd';
+import axios from 'axios';
 
 import img from '../images/13.jpg';
+
+
+const success = () => {
+    message
+      .then(() => message.success('All set for your offer', 2.5))
+      .then(() => message.info('Info on how to claim offer here', 2.5));
+  };
+
+
+  const fail = () => {
+    message
+      .then(() => message.error('Something went Wrong, try again in a little whilr', 2.5))
+  };
 
 function Offer() {
   
   const [visible, setVisible] = useState(false);
   const [confirmLoading, setConfirmLoading] = useState(false);
   const [targeted, setTargeted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const { Meta } = Card;
 
@@ -40,24 +55,33 @@ function Offer() {
     setVisible(false);
   };
 
-  const postData=()=>{
-    const requestOptions = {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ 
-        fname: 'Ayodele', 
-        lname: 'Olorungbon', 
-        email: 'aolorungbon@gmail.com', 
-        phone: '10293847564', 
+
+  const onFinish = (values) => {
+    console.log(values);
+
+    setLoading(true)
+
+    axios.post(`https://brunches-database.herokuapp.com/`, values)
+      .then(res => {
+        // console.log(res);
+        // console.log(res.data);
+        if(res.status === 200){
+          setLoading(false)
+          handleCancel()
+          success()
+        }else{
+          setLoading(false)
+          handleCancel()
+          fail()
+        }
       })
-    };
-    console.log(requestOptions)
-    fetch('https://brunches-database.herokuapp.com/', requestOptions)
-    .then(response => response.json())
-  }
+  };
+
+  
 
 
   return ( 
+    
     <>
       <Modal
         title="Enter your details to claim This Offer"
@@ -65,6 +89,7 @@ function Offer() {
         onOk={handleOk}
         confirmLoading={confirmLoading}
         onCancel={handleCancel}
+        footer={null}
       >
         <div className='row'>
           <div className='col-sm-12 col-md-6'>
@@ -77,11 +102,17 @@ function Offer() {
             </Card>
           </div>
           <div className='col-sm-6'>
-            <Form id='myForm'>
+            <Form id='myForm' onFinish={onFinish}>
               <div className='container-fluid py-4 px-4'>
                   <div className='row'>
                     <div className='col-md-12'>
-                      <Form.Item name='name' rules={[{required:true}]} label='Name'>
+                      <Form.Item name='fname' rules={[{required:true}]} label='First Name'>
+                        <Input />
+                      </Form.Item>
+                    </div>
+                    
+                    <div className='col-md-12'>
+                      <Form.Item name='lname' rules={[{required:true}]} label='Last Name'>
                         <Input />
                       </Form.Item>
                     </div>
@@ -96,7 +127,7 @@ function Offer() {
                       Phone Number
                     </div> */}
                     <div className='col-12'>
-                      <Form.Item name='number' rules={[{required:true, type:'number'}]} label='#' >
+                      <Form.Item name='number' rules={[{required:true, message:'Invalid Phonenumber' ,pattern: new RegExp(/(070[0-9]{8}|080[0-9]{8}|090[0-9]{8})/)}]} label='Phone' >
                         <Input placeholder='Phone Number' />
                       </Form.Item>
                     </div>
@@ -104,7 +135,7 @@ function Offer() {
                     <div className='col-sm-6'>
                       <Form.Item>
                         <div className='text-center'>
-                          <Button type="primary" onClick={()=>postData()} >
+                          <Button type="primary" htmlType='submit' loading={loading}>
                             Buy Now
                           </Button>
                         </div>
