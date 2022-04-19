@@ -40,6 +40,22 @@ function Offer() {
     setVisible(false);
   };
 
+  const postData=()=>{
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ 
+        fname: 'Ayodele', 
+        lname: 'Olorungbon', 
+        email: 'aolorungbon@gmail.com', 
+        phone: '10293847564', 
+      })
+    };
+    console.log(requestOptions)
+    fetch('https://brunches-database.herokuapp.com/', requestOptions)
+    .then(response => response.json())
+  }
+
 
   return ( 
     <>
@@ -88,11 +104,9 @@ function Offer() {
                     <div className='col-sm-6'>
                       <Form.Item>
                         <div className='text-center'>
-                          <a href='https://www.w3schools.com'>
-                            <Button type="primary" >
-                              Buy Now
-                            </Button>
-                          </a>
+                          <Button type="primary" onClick={()=>postData()} >
+                            Buy Now
+                          </Button>
                         </div>
                       </Form.Item>
                     </div>
