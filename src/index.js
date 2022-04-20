@@ -13,6 +13,7 @@ import Menu from './components/menu'
 import Location from './components/location'
 import Gallery from './components/gallery'
 import Offer from './components/offer'
+import Footer from './components/footer'
 
 
 ReactDOM.render(
@@ -24,6 +25,7 @@ ReactDOM.render(
     <Menu />
     <Location />
     {/* <Gallery /> */}
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );

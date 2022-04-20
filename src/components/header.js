@@ -144,7 +144,7 @@ export default class Header1 extends React.Component{
           <a href='#carousel'>
             <div className="logo" style={{float:'left', width:'120px', height:'31px', margin:'16px 24px 16px 0', background:'rgba(255, 255, 255, 0.3)', backgroundImage:`url('${logo}')`, backgroundSize:'cover'}}/>
           </a>
-
+{/* 
           <div style={{float:'right'}}>
 
             <a className='px-2' href='https://www.instagram.com/the_brunches_cafe/' target='_blank'>
@@ -179,7 +179,7 @@ export default class Header1 extends React.Component{
             </Tooltip>
            
 
-          </div>
+          </div> */}
 
           <Menu theme="dark" mode="horizontal" style={{backgroundColor: 'transparent',}}>
             
@@ -260,15 +260,15 @@ export default class Header1 extends React.Component{
           onClose={()=>this.onDrawerClose()} 
           visible={this.state.drawerVisible}
           width={150}
-          headerStyle={{backgroundColor:'#001529'}}
-          bodyStyle={{backgroundColor:'#001529'}}
+          // headerStyle={{backgroundColor:'#001529'}}
+          // bodyStyle={{backgroundColor:'#001529'}}
         >
 
           <Menu
-            defaultSelectedKeys={['1']}
-            defaultOpenKeys={['socials']}
+            // defaultSelectedKeys={['1']}
+            // defaultOpenKeys={['socials']}
             mode="inline"
-            theme="dark"
+            theme="light"
             inlineCollapsed={this.state.collapsed}
             style={{
               marginTop:'5px'
@@ -290,7 +290,7 @@ export default class Header1 extends React.Component{
                 store
               </a>
             </Menu.Item>
-
+{/* 
             <SubMenu key={'socials'} title='Socials'>
               <Menu.Item>
                 <InstagramOutlined style={{fontSize:'150%'}} />
@@ -307,7 +307,7 @@ export default class Header1 extends React.Component{
                   onMouseOut={()=>this.onMouseOutLogo()}
                 ></i>
               </Menu.Item>
-            </SubMenu>
+            </SubMenu> */}
             
           </Menu>
           

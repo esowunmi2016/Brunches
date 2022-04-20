@@ -9,15 +9,18 @@ import img from '../images/13.jpg';
 
 
 const success = () => {
-    message
-      .then(() => message.success('All set for your offer', 2.5))
-      .then(() => message.info('Info on how to claim offer here', 2.5));
+    message.success({
+      content: 'All set for your offer',
+      className: 'custom-class',
+      style: {
+        marginTop: '10vh',
+      },
+    });
   };
 
 
   const fail = () => {
-    message
-      .then(() => message.error('Something went Wrong, try again in a little whilr', 2.5))
+    message.error('Something went Wrong, try again in a little while', 2.5)
   };
 
 function Offer() {
@@ -33,9 +36,11 @@ function Offer() {
     window.localStorage.clear();
   },[])
 
-  if(!window.localStorage.getItem('targeted') || window.localStorage.getItem('targeted') === null){
-    window.localStorage.setItem('targeted', true)
-    setTimeout(()=>showModal(),5000)
+  const showTarget=()=>{
+    if(!window.localStorage.getItem('targeted') || window.localStorage.getItem('targeted') === null){
+      window.localStorage.setItem('targeted', true)
+      setTimeout(()=>showModal(),5000)
+    }
   }
   
 
@@ -63,8 +68,9 @@ function Offer() {
 
     axios.post(`https://brunches-database.herokuapp.com/`, values)
       .then(res => {
-        // console.log(res);
-        // console.log(res.data);
+        console.log(res);
+        console.log(res.data);
+        console.log(res.status);
         if(res.status === 200){
           setLoading(false)
           handleCancel()
@@ -96,7 +102,7 @@ function Offer() {
             <Card
               hoverable
               style={{ width: 240 }}
-              cover={<img alt="example" src={img} />}
+              cover={<img alt="example" src={img} onLoad={showTarget()} />}
             >
               <Meta title="Offer/Deal name here" description="Offfer/Deal information here......." />
             </Card>
@@ -136,7 +142,7 @@ function Offer() {
                       <Form.Item>
                         <div className='text-center'>
                           <Button type="primary" htmlType='submit' loading={loading}>
-                            Buy Now
+                            SUBMIT
                           </Button>
                         </div>
                       </Form.Item>
