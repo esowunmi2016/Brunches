@@ -19,13 +19,13 @@ import Footer from './components/footer'
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
-    {/* <Offer /> */}
-    {/* <Header1 /> */}
+    <Offer />
+    <Header1 />
     <Carousel1 />
-    {/* <Menu /> */}
-    {/* <Location /> */}
+    <Menu />
+    <Location />
     {/* <Gallery /> */}
-    {/* <Footer /> */}
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );
