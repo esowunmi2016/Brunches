@@ -33,7 +33,7 @@ function Offer() {
   const { Meta } = Card;
 
   useEffect(()=>{
-    window.localStorage.clear();
+    // window.localStorage.clear();
   },[])
 
   const showTarget=()=>{

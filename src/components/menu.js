@@ -54,6 +54,8 @@ function Menu() {
 						<Image 
 							src={pg2}
 							height={550}
+							preview={{ visible: false }}
+							onClick={() => setVisible(true)}
 						/>
 					</ScrollAnimation>
 				</div>

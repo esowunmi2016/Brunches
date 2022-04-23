@@ -14,6 +14,7 @@ import Location from './components/location'
 import Gallery from './components/gallery'
 import Offer from './components/offer'
 import Footer from './components/footer'
+import Info from './components/info'
 
 
 
@@ -26,6 +27,7 @@ ReactDOM.render(
     <Menu />
     <Location />
     {/* <Gallery /> */}
+    <Info />
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')
