@@ -21,13 +21,13 @@ import Info from './components/info'
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Offer />
+    {/* <Offer /> */}
     <Header1 />
     <Carousel1 />
     <Menu />
     <Location />
     {/* <Gallery /> */}
-    <Info />
+    {/* <Info /> */}
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')
