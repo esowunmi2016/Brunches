@@ -28,7 +28,7 @@ ReactDOM.render(
     <Location />
     {/* <Gallery /> */}
     {/* <Info /> */}
-    {/* <Footer /> */}
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );

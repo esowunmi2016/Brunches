@@ -37,17 +37,18 @@ function Footer() {
   }
 
   return ( 
-    <div
+    <div 
+      className='row d-flex align-items-center'
       style={{
-        height:'15vh',
+        height:'20vh',
         background:'black',
-        display:'flex',
-        justifyContent:'center',
-        alignItems:'center',
+        // display:'flex',
+        // justifyContent:'center',
+        // alignItems:'center',
         color:'white'
       }}
     >
-      <div>
+      <div className='col-12 d-flex justify-content-center'>
         <a className='px-2' href='https://www.instagram.com/the_brunches_cafe/' target='_blank'>
               <Tooltip title='Instagram' placement='bottom'>
                 <InstagramOutlined 
@@ -89,6 +90,9 @@ function Footer() {
             </Tooltip>
            
 
+      </div>
+      <div className='col-12 d-flex justify-content-center'>
+        Designed by <a href='https://www.linkedin.com/in/emmanuel-sowunmi-505706174/' target='_blank'>&nbsp; Emmanuel Sowunmi</a>   
       </div>
     </div>
   );

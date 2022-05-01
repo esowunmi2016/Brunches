@@ -52,7 +52,7 @@ function Carousel1() {
             />
           </div>
          
-          <div>
+          {/* <div>
             <div 
               style={{
                 height:'100vh', 
@@ -77,7 +77,7 @@ function Carousel1() {
               }} 
             />
           </div>
-         
+          */}
         </Carousel>
         
         <div
