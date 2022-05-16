@@ -1,22 +1,30 @@
 {
   "files": {
     "main.css": "/Brunches/static/css/main.3f3971a3.css",
-    "main.js": "/Brunches/static/js/main.71b4b711.js",
+    "main.js": "/Brunches/static/js/main.e20fbede.js",
     "static/js/787.3af51cb7.chunk.js": "/Brunches/static/js/787.3af51cb7.chunk.js",
     "static/media/menuPg1.png": "/Brunches/static/media/menuPg1.259ed95c76a9508c49a1.png",
     "static/media/menuPg2.png": "/Brunches/static/media/menuPg2.4a42bdfcd13cf3e817a5.png",
     "static/media/12.jpg": "/Brunches/static/media/12.20525f94d0f073b6dac1.jpg",
+    "static/media/17.png": "/Brunches/static/media/17.a0054c1a8ca8169c3b4b.png",
+    "static/media/14.png": "/Brunches/static/media/14.b93bbdb2565b752bf022.png",
+    "static/media/brunchesWhite.png": "/Brunches/static/media/brunchesWhite.a987b95dd39e9f268b7f.png",
+    "static/media/16.png": "/Brunches/static/media/16.da6366ccfb833fcd5ba6.png",
     "static/media/13.jpg": "/Brunches/static/media/13.333a71d7f93388abd8a4.jpg",
     "static/media/8.jpeg": "/Brunches/static/media/8.b0d36b693a472e3a9a6c.jpeg",
+    "static/media/18.jpg": "/Brunches/static/media/18.7a2bd9630e74527927d5.jpg",
+    "static/media/15.png": "/Brunches/static/media/15.5bd8c32d453e77fd3d04.png",
+    "static/media/20.jpg": "/Brunches/static/media/20.59882055cc1f99550c80.jpg",
+    "static/media/19.jpg": "/Brunches/static/media/19.95f0768b5d104b34e5d7.jpg",
     "static/media/logo.jpg": "/Brunches/static/media/logo.92b5a283237049bb0df0.jpg",
     "static/media/logo.svg": "/Brunches/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Brunches/index.html",
     "main.3f3971a3.css.map": "/Brunches/static/css/main.3f3971a3.css.map",
-    "main.71b4b711.js.map": "/Brunches/static/js/main.71b4b711.js.map",
+    "main.e20fbede.js.map": "/Brunches/static/js/main.e20fbede.js.map",
     "787.3af51cb7.chunk.js.map": "/Brunches/static/js/787.3af51cb7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3f3971a3.css",
-    "static/js/main.71b4b711.js"
+    "static/js/main.e20fbede.js"
   ]
 }
