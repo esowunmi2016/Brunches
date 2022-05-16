@@ -142,9 +142,20 @@ export default class Header1 extends React.Component{
           }} 
         >
           <a href='#carousel'>
-            <div className="logo" style={{float:'left', width:'120px', height:'31px', margin:'16px 24px 16px 0', background:'rgba(255, 255, 255, 0.3)', backgroundImage:`url('${logo}')`, backgroundSize:'cover'}}/>
+            <div 
+              className="logo" 
+              style={{
+                float:'left', 
+                width:'120px', 
+                height:'31px', 
+                margin:'16px 24px 16px 0', 
+                background:'rgba(255, 255, 255, 0.3)', 
+                backgroundImage:`url('${logo}')`, 
+                backgroundSize:'cover'
+              }}
+            />
           </a>
-{/* 
+
           <div style={{float:'right'}}>
 
             <a className='px-2' href='https://www.instagram.com/the_brunches_cafe/' target='_blank'>
@@ -179,7 +190,7 @@ export default class Header1 extends React.Component{
             </Tooltip>
            
 
-          </div> */}
+          </div>
 
           <Menu theme="dark" mode="horizontal" style={{backgroundColor: 'transparent',}}>
             
@@ -199,15 +210,6 @@ export default class Header1 extends React.Component{
         {/* VERTICAL SIDER THAT IS ONLY DISPLAYED ON SMALLER SCREENS */}
         <div style={{display:this.state.sider}}>
           <div className="pos-f-t">
-           
-{/* 
-            <div className="collapse" id="navbarToggleExternalContent">
-              <div className="bg-dark p-4">
-                <h5 className="text-white h4">Collapsed content</h5>
-                <span className="text-muted">Toggleable via the navbar brand.</span>
-              </div>
-            </div> */}
-
             <nav 
               className="navbar navbar-dark fixed-top"
               style={{
@@ -215,19 +217,18 @@ export default class Header1 extends React.Component{
                 // background:'transparent'
               }}
             >
-              
               <a className="navbar-brand" href="#carousel">
-                <div style={{
-                  height:'2rem',
-                  width:'120px',
-                  background:'white',
-                  backgroundImage:`url('${logo}')`,
-                  backgroundSize:'cover',
-                }}>
-
+                <div 
+                  style={{
+                    height:'2rem',
+                    width:'120px',
+                    background:'white',
+                    backgroundImage:`url('${logo}')`,
+                    backgroundSize:'cover',
+                  }}
+                >
                 </div>
               </a>
-
               <button 
                 className="btn btn-outline-dark" 
                 type="button" 
@@ -245,25 +246,20 @@ export default class Header1 extends React.Component{
               >
                 <span class="navbar-toggler-icon"></span>
               </button>
-            
             </nav>
-
-
           </div>
         </div>
 
 
 
         <Drawer 
-          // title="Basic Drawer" 
           placement="right" 
           onClose={()=>this.onDrawerClose()} 
           visible={this.state.drawerVisible}
           width={150}
-          // headerStyle={{backgroundColor:'#001529'}}
+          headerStyle={{backgroundColor:'#001529'}}
           // bodyStyle={{backgroundColor:'#001529'}}
         >
-
           <Menu
             // defaultSelectedKeys={['1']}
             // defaultOpenKeys={['socials']}
@@ -274,7 +270,6 @@ export default class Header1 extends React.Component{
               marginTop:'5px'
             }}
           >
-            
               <Menu.Item key="1">
                 <a href='#menu' onClick={()=>this.setState({drawerVisible : false})}>
                   Menu
@@ -290,7 +285,7 @@ export default class Header1 extends React.Component{
                 store
               </a>
             </Menu.Item> */}
-{/* 
+
             <SubMenu key={'socials'} title='Socials'>
               <Menu.Item>
                 <InstagramOutlined style={{fontSize:'150%'}} />
@@ -307,10 +302,8 @@ export default class Header1 extends React.Component{
                   onMouseOut={()=>this.onMouseOutLogo()}
                 ></i>
               </Menu.Item>
-            </SubMenu> */}
-            
+            </SubMenu>
           </Menu>
-          
         </Drawer>
       </div>
     )
