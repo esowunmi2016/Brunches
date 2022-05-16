@@ -22,7 +22,7 @@ ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <Offer /> */}
-    <Header1 />
+    {/* <Header1 /> */}
     <Carousel1 />
     <Menu />
     <Location />
