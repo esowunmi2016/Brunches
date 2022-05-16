@@ -198,7 +198,7 @@ export default class Header1 extends React.Component{
 
               <Menu.Item key="3"><a href='#location'>Location </a></Menu.Item>
               
-              {/* <Menu.Item key="2"><a target='_blank' href='http://storefront.quickteller.com/brunches'>Store</a></Menu.Item> */}
+              <Menu.Item key="2"><a target='_blank' href='https://linktr.ee/brunchesmagodo'>Store</a></Menu.Item>
               
               {/* <Menu.Item key="2"><a href='#gallery'>Gallery</a></Menu.Item> */}
             
@@ -280,11 +280,11 @@ export default class Header1 extends React.Component{
                 Location
               </a>
             </Menu.Item>
-            {/* <Menu.Item key="3">
-              <a href='http://storefront.quickteller.com/brunches' target='_blank' onClick={()=>this.setState({drawerVisible : false})}>
+            <Menu.Item key="3">
+              <a href='https://linktr.ee/brunchesmagodo' target='_blank' onClick={()=>this.setState({drawerVisible : false})}>
                 store
               </a>
-            </Menu.Item> */}
+            </Menu.Item>
 
             <SubMenu key={'socials'} title='Socials'>
               <Menu.Item>
