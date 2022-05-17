@@ -5,8 +5,6 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import img1 from '../images/8.jpeg'
 import img2 from '../images/17.png'
 import img3 from '../images/18.jpg'
-import img4 from '../images/19.jpg'
-import img5 from '../images/20.jpg'
 import logo from '../images/brunchesWhite.png'
 
 function Carousel1() {
@@ -25,59 +23,36 @@ function Carousel1() {
               }} 
             />
           </div>
-         
-          <div>
-            <div 
-              style={{
-                height:'100vh', 
-                background:`url(${img2})`, 
-                backgroundSize:'cover',
-                backgroundRepeat:'no-repeat',
-                backgroundPosition:'center'
-                
-              }} 
-            />
-          </div>
-         
-          <div>
-            <div 
-              style={{
-                height:'100vh', 
-                background:`url(${img3})`, 
-                backgroundSize:'cover',
-                backgroundRepeat:'no-repeat',
-                backgroundPosition:'center'
-                
-              }} 
-            />
-          </div>
-         
-          {/* <div>
-            <div 
-              style={{
-                height:'100vh', 
-                background:`url(${img4})`, 
-                backgroundSize:'cover',
-                backgroundRepeat:'no-repeat',
-                backgroundPosition:'center'
-                
-              }} 
-            />
-          </div>
-         
-          <div>
-            <div 
-              style={{
-                height:'100vh', 
-                background:`url(${img5})`, 
-                backgroundSize:'cover',
-                backgroundRepeat:'no-repeat',
-                backgroundPosition:'center'
-                
-              }} 
-            />
-          </div>
-          */}
+
+          {window.innerWidth < 510 ? (''):(
+            <div>
+              <div 
+                style={{
+                  height:'100vh', 
+                  background:`url(${img2})`, 
+                  backgroundSize:'cover',
+                  backgroundRepeat:'no-repeat',
+                  backgroundPosition:'center'
+                  
+                }} 
+              />
+            </div>
+          )}
+          
+         {window.innerWidth > 800 ? (''):(
+            <div>
+              <div 
+                style={{
+                  height:'100vh', 
+                  background:`url(${img3})`, 
+                  backgroundSize:'cover',
+                  backgroundRepeat:'no-repeat',
+                  backgroundPosition:'center'
+                }} 
+              />
+            </div>
+          )} 
+
         </Carousel>
         
         <div
